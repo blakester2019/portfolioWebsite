@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 233, 233);
+    font-family: 'Poppins', sans-serif;
+}
+
+.landing {
+    background: url('bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.line {
+    height: 3px;
+    width: 250px;
+    margin: 5px;
+    background-color: white;
+}
+
+.name {
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0.1em;
+    animation-name: animateName;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animateName {
+    0%{
+        letter-spacing: auto;
+    }
+    50%{
+        letter-spacing: 20px;
+    }
+    100%{
+        letter-spacing: auto;
+    }
+}
+
+.title-para {
+    font-size: 23px;
+    color: white;
+    opacity: 0;
+    animation-name: animateTitlePara;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animateTitlePara {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.links {
+    padding: 20px;
+    opacity: 0;
+    animation-name: linkAni;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#projects-link {
+    opacity: 0;
+    animation-name: linkAni;
+    animation-duration: 3s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+#contact-link {
+    opacity: 0;
+    animation-name: linkAni;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#business-link {
+    opacity: 0;
+    animation-name: linkAni;
+    animation-duration: 3s;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes linkAni {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+}
+
+.link-titles {
+    padding: 2px 12px;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.link-titles:hover {
+    color: rgb(170, 170, 170);
+}
+
+.icons {
+    float: right;
+    padding: 20px;
+    animation-name: linkAni;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+.fab {
+    color: white;
+}
+
+.git:hover {
+    color: rgb(170, 170, 170);
+}
+
+.linkedin:hover {
+    color: rgb(170, 170, 170);
+}
+
+@media (max-width: 600px) {
+    .link-titles {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .links {
+        padding-right: 0;
+    }
+    .fab {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .icons {
+        float: left;
+    }
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    background: rgb(240, 233, 233);
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    padding-bottom: 40px;
+}
+
+.res-name {
+    margin-top: 25px;
+    font-size: 3rem;
+    color: #333333;
+}
+
+.res-line {
+    width: 150px;
+    height: 10px;
+    margin: 5px;
+    background: orangered;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.res-icons {
+    display: flex;
+    width: 100%;
+}
+
+.icon-section-bolt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bolt {
+    color: orangered;
+}
+
+.icon-section-book {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.icon-section-responsive {
+    margin-top: 70px;
+}
+
+.book {
+    color: orangered;
+}
+
+.icon-section-laptop {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop {
+    color: orangered;
+}
+
+.icon-section-compass {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.compass {
+    color: orangered;
+}
+
+.res-desc {
+    text-align: center;
+    width: 50%;
+}
+
+.about {
+    width: 80%;
+    padding-top: 50px;
+}
+
+.about-flex {
+    display: flex;
+}
+
+.about-img-div {
+    flex: 1;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.about-para-div {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.about-img {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.para-title {
+    margin-left: 20px;
+    color: #333;
+}
+
+.about-para {
+    padding: 20px;
+}
+
+.about-res-link {
+    margin-left: 20px;
+    display: inline-block;
+    background: orangered;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.about-res-link:hover {
+    background: rgba(255, 69, 0, 0.8);
+}
+
+.projects {
+    width: 100%;
+    background-color: rgb(218, 218, 218);
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.projects-title {
+    margin: auto;
+    text-align: center;
+    color: #333;
+    font-size: 3rem;
+}
+
+.projects-line {
+    margin: auto;
+    text-align: center;
+    width: 175px;
+    height: 6px;
+    display: block;
+    background: orangered;
+}
+
+.projects-para {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
+
+.project-weardrug {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 1px 1px 8px 10px rgba(255, 69, 0, 0.7);
+    padding: 10px;
+}
+
+.project-weardrug-top {
+    border-bottom: 1px solid black
+}
+
+.project-weardrug-title {
+    color: #333;
+    padding: 12px;
+    display: inline;
+    padding-left: 10px;
+}
+
+.project-weardrug-type {
+    display: inline;
+    float: right;
+    padding: 12px;
+    padding-right: 10px;
+    color: #333;
+}
+
+.project-weardrug-para {
+    text-align: center;
+    padding-top: 12px;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.project-weardrug-img {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    margin-left: 25%;
+    filter: brightness(0.9);
+    border: 1px solid rgb(88, 88, 88);
+    margin-bottom: 20px;
+}
+
+.project-weardrug-visit {
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 69, 0, 0.8);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+}
+
+.project-two {
+    margin-top: 150px;
+}
+
+.contact {
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgb(94, 94, 94);
+}
+
+.contact-title {
+    font-size: 3rem;
+    color: #333;
+}
+
+.contact-line {
+    margin: auto;
+    text-align: center;
+    width: 275px;
+    height: 6px;
+    display: block;
+    background: orangered;
+}
+
+.contact-info {
+    padding: 20px;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* RESPONSIVENESS */
+
+/* SMALLER SCREENS */
+
+@media (max-width: 900px) {
+    .project-weardrug-title {
+        font-size: 22px;
+    }
+    .project-weardrug-type {
+        padding: 0;
+    }
+    .about-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* PHONE SCREENS */
+
+@media (max-width: 500px) {
+    .landing {
+        background: #333;
+    }
+    .name {
+        font-size: 2.2rem;
+        animation-name: none;
+    }
+    .title-para {
+        animation-name: none;
+        opacity: 1;
+    }
+    .icons {
+        float: left;
+    }
+    .res-icons {
+        flex-direction: column;
+    }
+    .res-desc {
+        width: 70%;
+    }
+    .project-weardrug-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .project-weardrug-title {
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+        float: none;
+    }
+    .project-weardrug-type {
+        font-size: 15px;
+        display: block;
+        float: none;
+    }
+    .project-weardrug-para {
+        width: 100%;
+    }
+    .project-weardrug-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .links {
+        animation-name: none;
+        opacity: 1;
+    }
+    #about-link {
+        animation-name: none;
+        opacity: 1;
+    }
+    #projects-link {
+        animation-name: none;
+        opacity: 1;
+    }
+    #contact-link {
+        animation-name: none;
+        opacity: 1;
+    }
+    #business-link {
+        animation-name: none;
+        opacity: 1;
+    }
+    .icons {
+        animation-name: none;
+    }
+    
+}
