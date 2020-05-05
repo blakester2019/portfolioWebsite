@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blake Rhodes</title>
+    <script src="https://kit.fontawesome.com/3e4cea6e0a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <!-- NAV -->
+
+    <nav class="nav main-nav z-depth-0">
+      <div class="left left-nav-div">
+        <ul class="nav-left">
+          <li><a class="nav-left-text" style="font-size: 25px;" href="#">About</a></li>
+          <li><a class="nav-left-text" style="font-size: 25px;" href="#">Projects</a></li>
+          <li><a class="nav-left-text" style="font-size: 25px;" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="right right-nav-div">
+        <ul class="nav-right">
+          <li><a href="https://github.com/blakester2019" target="_blank" class="disable-hover"><i class="fab fa-github-square"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/blake-rhodes-9526a218a/" target="_blank" class="disable-hover"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- LANDING -->
+
+    <div class="landing">
+      <h1 class="name">Blake Rhodes</h1>
+      <span class="line"></span>
+      <p class="title-para">Front-End Developer</p>
+      <!--<img class="landing-image" src="imgs/bitmoji.png">-->
+
+      <!-- NAV FOR PHONES -->
+      <div class="nav-for-phones z-depth-0">
+        <div class="nav-for-phones-div">
+          <ul class="nav-for-phones-ul">
+            <li><a href="https://github.com/blakester2019" target="_blank" class="phone-icon disable-hover"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/blake-rhodes-9526a218a/" target="_blank" class="phone-icon disable-hover"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- ABOUT ME -->
+
+    <div class="about-container">
+      <div id="about" class="about">
+        <div data-scroll class="about-flex">
+          <div class="about-img-div">
+            <img src="imgs/seniorpicedit.jpg" class="about-img z-depth-3">
+          </div>
+          <div class="about-para-div">
+            <h1 id="res-title2" class="para-title">Hello,</h1>
+            <p class="about-para">my name is Blake Rhodes and I am 
+              a front-end web developer from Carthage, IL. I began working with 
+              content management systems in late 2017 and in 2019 I created 
+              my first website using HTML5 and CSS3.
+            </p>
+            <a href="#contact" data-target="modal-contact" class="about-res-link z-depth-4 modal-trigger">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div data-scroll class="projects">
+      <h1>Work Experience</h1>
+      <div class="projects-container row">
+
+      <!-- WEAR DRUG -->
+      <div class="card col s6">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="imgs/weardrugimage2.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title card-main-title activator grey-text text-darken-4">Wear Drug<i class="material-icons remove-icon-from-phones right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title"><i class="material-icons right">close</i></span><br><br>
+          <span class="card-title grey-text text-darken-4">Wear Drug</span>
+          <p>Wear Drug is a pharmacy in my hometown, Carthage, IL. I created the Wear Drug website using a content 
+            content management system in early 2019. Wear Drug uses the site to inform customers about their store and 
+            direct customers to their software.
+          </p>
+          <a href="https://www.weardrug.com/" target="_blank">Click here to see the site!</a>
+        </div>
+      </div>
+
+        <!-- FARMHOUSE -->
+      <div class="card col s6">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="imgs/farmhouse2.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title card-main-title activator grey-text text-darken-4">Farmhouse Meat<i class="material-icons remove-icon-from-phones right">more_vert</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title"><i class="material-icons right">close</i></span><br>
+          <span class="card-title grey-text text-darken-4">Farmhouse Meat</span>
+          <p>Farmhouse Meat Co. is a meat locker in my hometown of Carthage, Il. I created the Farmhouse website in the summer of 2019.
+            Farmhouse Meat Co. uses their website to inform customers on products and prices.
+          </p>
+          <a href="https://www.farmhousemeatco.com/" target="_blank">Click here to see the site!</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- PROJECTS FOR PHONES -->
+
+    <div class="projects-for-phones">
+      <h1>Work Experience</h1>
+      <div class="projects-container-for-phones row">
+        <div data-target="modal-wear" class="card col s6 modal-trigger">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img data-target="modal-wear" class="modal-trigger" src="imgs/weardrugimage2.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title card-main-title activator grey-text text-darken-4">Wear Drug<i class="material-icons remove-icon-from-phones right">more_vert</i></span>
+          </div>
+        </div>
+        <div data-target="modal-farmhouse" class="card col s6 modal-trigger">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img data-target="modal-farmhouse" class="modal-trigger" src="imgs/farmhouse2.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title card-main-title activator grey-text text-darken-4">Farmhouse Meat<i class="material-icons remove-icon-from-phones right">more_vert</i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+    
+    <!-- CONTACT ME -->
+    <div class="contact">
+      <div data-scroll class="contact-container">
+        <a href="#" class="btn btn-large contact-btn modal-trigger" data-target="modal-contact" id="contact-btn">CONTACT ME</a>
+      </div>
+    </div>
+
+    <!-- CONTACT MODAL -->
+
+    <div class="modal" id="modal-contact">
+      <div class="modal-content">
+        <div class="container">
+          <h1 id="contact-title">Contact Me</h1>
+          <p class="contact-para">For any questions, contact me using the form or call/text 309-333-5444</p>
+          <form method="POST" action="contactform.php" id="contact-form">
+            <div class="input-field">
+              <input type="text" name="name" id="contact-name" required />
+              <label for="contact-name">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" name="mail" id="contact-email" required />
+              <label for="contact-email">Email Address</label>
+            </div>
+            <div class="input-field">
+              <input type="text" name="subject" id="contact-subject" required />
+              <label for="contact-subject">Subject</label>
+            </div>
+            <div class="input-field">
+              <textarea class="textarea materialize-textarea" name="message" id="contact-message" required /></textarea>
+              <label for="contact-email">Message</label>
+            </div>
+            <input type="submit" name="submit" class="btn contact-btn"></input>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEAR DRUG MODAL -->
+
+    <div class="modal" id="modal-wear">
+      <div class="modal-content">
+        <div class="container">
+          <h1 class="project-modal-title">Wear Drug</h1>
+          <p class="project-modal-para">Wear Drug is a pharmacy in my hometown, Carthage, IL. I created the Wear Drug website using a content 
+             management system in early 2019. Wear Drug uses the site to inform customers about their store and 
+            direct customers to their software.
+          </p>
+          <a href="https://www.weardrug.com/" target="_blank">Click here to see the site!</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FARMHOUSE MEAT MODAL -->
+
+    <div class="modal" id="modal-farmhouse">
+      <div class="modal-content">
+        <div class="container">
+          <h1 class="project-modal-title">Farmhouse Meat Co.</h1>
+          <p class="project-modal-para">Farmhouse Meat Co. is a meat locker in my hometown of Carthage, Il. I created the Farmhouse website in the summer of 2019.
+            Farmhouse Meat Co. uses their website to inform customers on products and prices.
+          </p>
+          <a href="https://www.farmhousemeatco.com/" target="_blank">Click here to see the site!</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
